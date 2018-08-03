@@ -94,4 +94,4 @@ RUN chmod 777 /usr/local/bin/docker-entrypoint.sh \
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 EXPOSE 27017
-CMD mongod --replSet joolia
+CMD mongod --replSet joolia --bind_ip_all
